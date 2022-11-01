@@ -9,9 +9,6 @@ const ordersRoures = require('./routes/order')
 
 const app = express()
 //mongoose.connect('mongodb://localhost:27017/e-commerse-website')
- mongoose.connect('mongodb+srv://anaselbadran:A123@cluster0.ino4voh.mongodb.net/?retryWrites=true&w=majority')
-
-
 
 app.use(cors({
     origin:"*",
