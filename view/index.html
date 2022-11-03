@@ -24,7 +24,7 @@
 
     <script>
         function locationChanger(evt){
-          switch (evt.innerHtml){
+          switch (evt.innerText){
             case "Users":{
               location.href='../routes/user.js'
               break
@@ -42,6 +42,7 @@
               break;
             }
           }
+          // console.log(evt.innerText);
         }
       
     </script>
