@@ -14,19 +14,10 @@ async function addUser(user) {
     let newUser = await userModel.create(user);
     if(!newUser){
         return "error"
-    }else {
-        let token = jwt.sign({
-            data:{
-                userName:user.userName,
-                userID:user.id
-            }
-        },
-            process.env.SECRET,
-            {expiresIn:'2h'}
-        )
-        return token
+    }else
+    return newUser;
     }
-}
+
 
 
 async function login(usnm, pass){
